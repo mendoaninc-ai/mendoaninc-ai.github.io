@@ -8,23 +8,76 @@
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            padding: 80px 20px;
+            padding: 40px 20px;
             background-color: #f8f9fa;
             color: #333;
         }
         h1 {
             color: #e65100;
             font-size: 2.5em;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
         }
-        p {
+        p.subtitle {
             font-size: 1.2em;
             color: #666;
+            margin-bottom: 40px;
+        }
+        .games-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .game-card {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            max-width: 200px;
+        }
+        .game-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+        .game-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            display: block;
+        }
+        .game-card h3 {
+            margin-top: 15px;
+            margin-bottom: 0;
+            font-size: 1.1em;
+            color: #222;
         }
     </style>
 </head>
 <body>
+
     <h1>Mendoan Inc</h1>
-    <p>Official Developer Website & Game Portfolio</p>
+    <p class="subtitle">Official Developer Website & Game Portfolio</p>
+
+    <div class="games-container">
+        <!-- Game 1: Juragan Sawit -->
+        <div class="game-card">
+            <a href="https://play.google.com/store/apps/details?id=com.mendoaninc.juragansawit" target="_blank" rel="noopener noreferrer">
+                <img src="juragan.png" alt="Juragan Sawit">
+            </a>
+            <h3>Juragan Sawit</h3>
+        </div>
+
+        <!-- Game 2: Save the Boss -->
+        <div class="game-card">
+            <a href="https://play.google.com/store/apps/details?id=com.mendoaninc.savetheboss" target="_blank" rel="noopener noreferrer">
+                <img src="boss.png" alt="Save the Boss">
+            </a>
+            <h3>Save the Boss</h3>
+        </div>
+    </div>
+
 </body>
 </html>
